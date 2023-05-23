@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/CSS/modal.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class=" py-3 text-center">Student Login</h2>
+        <div class="row py-3 justify-content-center">
+            <div class="col-md-3">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Login</button>
+
+                <div class="modal fade" data-backdrop="static" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-titel"> Login form</h2>
+
+                                <button class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+
+                            </div>
+                            <div class="modal-body">
+                                <div id="error"></div>
+                                <form class="p-md-5 " method="get" id="form" onsubmit="validate(event)" >
+                                    <lable for="name"></lable>
+                                    <input class="form-control"  type="text" id="name" placeholder="Enter your name"><br><br>
+                                    <lable for="Email"></lable>
+                                    <input type="email" id="email" placeholder="Enter your Email"><br><br>
+                                    <lable for="phone"></lable>
+                                    <input type="number" id="phone" placeholder="Enter your Phone Number"><br><br>
+                                    <lable for="password"></lable>
+                                    <input type="password" id="password" placeholder="Enter your password"><br><br>
+                                    <input type="submit" value="submit">
+                                    </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-dismiss="modal">close</button>
+                                
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script src="/JavaScript/aa.js">
+
+    </script>
+    
+</body>
+</html>
